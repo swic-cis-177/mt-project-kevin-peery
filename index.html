@@ -4,17 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
-
-    <!-- TODO: Add some Google Fonts -->
-
     <link rel="stylesheet" href="style.css">
 
-    <!-- TODO: Update '<title>'. -->
-    <title>Document</title>
+    <title>MT Project</title>
   </head>
   <body>
-    <!-- 'Connect' JS to this HTML file. -->
+    <form>
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user-name">
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+      <p id="error"></p>
+    </form>
+    <table>
+      <thead>
+        <th colspan="3">Most Recent</th>
+      </thead>
+      <thead>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Message</th>
+      </thead>
+      <tbody>
+        <tr id="one">
+          <td id="one-one"></td>
+          <td id="one-two"></td>
+          <td id="one-three"></td>
+        </tr>
+        <tr id="two">
+          <td id="two-one"></td>
+          <td id="two-two"></td>
+          <td id="two-three"></td>
+        </tr>
+        <tr id="three">
+          <td id="three-one"></td>
+          <td id="three-two"></td>
+          <td id="three-three"></td>
+        </tr>
+        <tr id="four">
+          <td id="four-one"></td>
+          <td id="four-two"></td>
+          <td id="four-three"></td>
+        </tr>
+        <tr id="five">
+          <td id="five-one"></td>
+          <td id="five-two"></td>
+          <td id="five-three"></td>
+        </tr>
+        <tr id="six">
+          <td id="six-one"></td>
+          <td id="six-two"></td>
+          <td id="six-three"></td>
+        </tr>
+        <tr id="seven">
+          <td id="seven-one"></td>
+          <td id="seven-two"></td>
+          <td id="seven-three"></td>
+        </tr>
+        <tr id="eight">
+          <td id="eight-one"></td>
+          <td id="eight-two"></td>
+          <td id="eight-three"></td>
+        </tr>
+        <tr id="nine">
+          <td id="nine-one"></td>
+          <td id="nine-two"></td>
+          <td id="nine-three"></td>
+        </tr>
+        <tr id="ten">
+          <td id="ten-one"></td>
+          <td id="ten-two"></td>
+          <td id="ten-three"></td>
+        </tr>
+      </tbody>
+    </table>
     <script src="./scripts.js"></script>
   </body>
 </html>
