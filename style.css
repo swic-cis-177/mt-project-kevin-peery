@@ -44,15 +44,22 @@ textarea:focus {
   padding-left: 90px;
 }
 
-button {
+.button button {
   margin-left: .5em;
+  margin-right: .5em;
+  width: 135px;
 }
 
 table {
   visibility: hidden;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #CCC;
   padding: 1em;
+}
+
+tbody tr:hover {
+  background-color: cyan;
 }
