@@ -4,17 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
-
-    <!-- TODO: Add some Google Fonts -->
-
     <link rel="stylesheet" href="style.css">
 
-    <!-- TODO: Update '<title>'. -->
-    <title>Document</title>
+    <title>MT Project</title>
   </head>
   <body>
-    <!-- 'Connect' JS to this HTML file. -->
-    <script src="./scripts.js"></script>
+    <main>
+      <form>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user-name" required>
+          </li>
+          <li>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="user_email" required>
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" required></textarea>
+          </li>
+          <li class="button">
+            <button id="submit" type="submit">
+              Submit info
+            </button>
+            <button id="clear" type="button">
+              Clear
+            </button>
+          </li>
+        </ul>
+        <p id="error"></p>
+      </form>
+      <table>
+        <thead>
+          <th colspan="3">Click any info below to change it.</th>
+        </thead>
+        <thead>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Message</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <template>
+      <tr data-info="false">
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+
+    <script src="./scripts.js" type="module"></script>
   </body>
 </html>
