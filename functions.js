@@ -1,6 +1,6 @@
 //Imports.
-import {form, name, email, message, submit,
-        clear, error, tbody, template, information} from "./variables.js";
+import {form, name, email, message, submit, clear,
+        error, tbody, template, information, selectedRow} from "./variables.js";
 
 
 //Export function.
@@ -50,4 +50,30 @@ export const clearInputs = () => {
 
   //Reset focus.
   name.focus();
+};
+
+//Export function.
+export const addOrChange = () => {
+  //Determine.
+  if(selectedRow.content.dataset.info === "true") {
+    //Toggle properties.
+    name.value = selectedRow.content.querySelector("td").textContent;
+    email.value = selectedRow.content.
+                  querySelector("td:nth-child(2)").textContent;
+    message.value = selectedRow.content.
+                    querySelector("td:nth-child(3)").textContent;
+    submit.textContent = "Change info";
+    clear.textContent = "Remove from list";
+
+    //Set focus.
+    name.focus();
+  }
+  else {
+    //Call function.
+    clearInputs();
+
+    //Toggle properties.
+    submit.textContent = "Submit info";
+    clear.textContent = "Clear";
+  }
 };

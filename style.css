@@ -60,6 +60,10 @@ td {
   padding: 1em;
 }
 
-tbody tr:hover {
+tbody [data-info="false"]:hover {
   background-color: cyan;
+}
+
+tbody [data-info="true"] {
+  background-color: blue;
 }

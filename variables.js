@@ -11,3 +11,8 @@ export const template = document.querySelector("template");
 
 //Export array.
 export const information = [];
+
+//Export variable.
+export const selectedRow = {
+  index: null,
+  content: null};
